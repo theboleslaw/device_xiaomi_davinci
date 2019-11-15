@@ -27,3 +27,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # OEM
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.oem_unlock_supported=0
+
+# Priv-app permission
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.control_privapp_permissions=log
