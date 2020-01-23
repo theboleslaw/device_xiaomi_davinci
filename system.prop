@@ -130,7 +130,7 @@ ro.hardware.wlan.chip=39xx
 ro.hardware.wlan.mimo=1
 
 # Vendor
-ro.vendor.qti.va_aosp.support
+ro.vendor.qti.va_aosp.support=1
 
 # Display density
 ro.sf.lcd_density=440

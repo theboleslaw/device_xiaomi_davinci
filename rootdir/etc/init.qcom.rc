@@ -11,8 +11,7 @@ on init
     mount none /dev/null /vendor/etc/powerhint.xml
 
 on boot
-    # Thermal Profile
-    write /sys/class/thermal/thermal_message/sconfig 0
+    write /sys/class/thermal/thermal_message/sconfig 10
 
 service citsensor-hal-1-1  /vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
     override
