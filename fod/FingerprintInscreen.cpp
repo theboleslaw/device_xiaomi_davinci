@@ -86,7 +86,6 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 
 Return<void> FingerprintInscreen::onPress() {
     acquire_wake_lock(PARTIAL_WAKE_LOCK, LOG_TAG);
-    TouchFeatureService->setTouchMode(10, 1);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
     return Void();
 }
@@ -98,6 +97,7 @@ Return<void> FingerprintInscreen::onRelease() {
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
+    TouchFeatureService->setTouchMode(10, 1);
     xiaomiDisplayFeatureService->setFeature(0, 17, 1, 255);
     xiaomiDisplayFeatureService->setFeature(0, 11, 1, 4);
     return Void();
