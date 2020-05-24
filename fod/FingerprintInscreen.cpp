@@ -99,7 +99,6 @@ Return<void> FingerprintInscreen::onRelease() {
 Return<void> FingerprintInscreen::onShowFODView() {
     TouchFeatureService->setTouchMode(10, 1);
     xiaomiDisplayFeatureService->setFeature(0, 17, 1, 255);
-    xiaomiDisplayFeatureService->setFeature(0, 11, 1, 4);
     return Void();
 }
 
@@ -146,16 +145,7 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 }
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
-    float alpha;
-    int realBrightness = get(BRIGHTNESS_PATH, 0);
-
-    if (realBrightness > 500) {
-        alpha = 1.0 - pow(realBrightness / 2047.0 * 430.0 / 600.0, 0.455);
-    } else {
-        alpha = 1.0 - pow(realBrightness / 1680.0, 0.455);
-    }
-
-    return 255 * alpha;
+    return 0;
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
