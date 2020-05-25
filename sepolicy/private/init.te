@@ -29,4 +29,4 @@ allow init {
 }:{
   file
   lnk_file
-} rw_file_perms;
+} create_file_perms;
