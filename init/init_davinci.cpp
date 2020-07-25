@@ -64,11 +64,11 @@ constexpr const char *BUILD_DESCRIPTION[] = {
 };
 
 constexpr const char *BUILD_FINGERPRINT[] = {
-    "Xiaomi/davinci/davinci:10/QKQ1.190825.002/V12.0.3.0.QFJCNXM:user/"
+    "google/coral/coral:10/QQ3A.200705.002/6506677:user/"
     "release-keys",
-    "Xiaomi/davinci/davinci:10/QKQ1.190825.002/V12.0.0.11.QFJMIXM:user/"
+    "google/coral/coral:10/QQ3A.200705.002/6506677:user/"
     "release-keys",
-    "Xiaomi/davinciin/davinciin:10/QKQ1.190825.002/V12.0.0.2.QFJINXM:user/"
+    "google/coral/coral:10/QQ3A.200705.002/6506677:user/"
     "release-keys",
 };
 
