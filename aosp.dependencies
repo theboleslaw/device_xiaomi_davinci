@@ -8,5 +8,11 @@
     "repository":  "vendor_xiaomi_davinci",
     "target_path": "vendor/xiaomi/davinci",
     "branch":      "ten"
+  },
+  {
+    "repository":  "sm6150-dev/kernel_xiaomi_sm6150",
+    "target_path": "kernel/xiaomi/sm6150",
+    "branch":      "lineage-17.1",
+    "remote":      "github"
   }
 ]
